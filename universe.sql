@@ -49,7 +49,10 @@ SET default_table_access_method = heap;
 
 CREATE TABLE public.galaxy (
     galaxy_id integer NOT NULL,
-    name character varying(100) NOT NULL
+    name character varying(100) NOT NULL,
+    distance_from_earth_ly integer NOT NULL,
+    type text,
+    apparent_magnitude numeric(3,1)
 );
 
 
