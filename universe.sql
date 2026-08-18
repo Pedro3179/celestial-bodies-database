@@ -112,8 +112,8 @@ CREATE TABLE public.planet (
     is_exoplanet boolean NOT NULL,
     planet_type_id integer,
     mass double precision,
-    distance_from_earth integer NOT NULL,
-    is_confirmed boolean NOT NULL
+    is_confirmed boolean NOT NULL,
+    distance_from_earth_ly double precision NOT NULL
 );
 
 
@@ -169,7 +169,7 @@ CREATE TABLE public.star (
     name character varying(100) NOT NULL,
     galaxy_id integer NOT NULL,
     mass double precision,
-    distance_from_earth_km integer NOT NULL
+    distance_from_earth_ly double precision NOT NULL
 );
 
 

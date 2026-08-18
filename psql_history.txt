@@ -100,3 +100,19 @@ ALTER TABLE galaxy ADD COLUMN type TEXT;
 ALTER TABLE galaxy ADD COLUMN apparent_magnitude NUMERIC(3, 1);
 \d galaxy
 \s psql_history.txt
+\q
+\d star
+ALTER TABLE star RENAME COLUMN distance_from_earth_km TO distance_from_earth_ly;
+\d star
+ALTER TABLE star ALTER COLUMN distance_from_earth_ly SET FLOAT;
+ALTER TABLE star DROP COLUMN distance_from_earth_ly;
+ALTER TABLE star ADD COLUMN distance_from_earth_ly FLOAT NOT NULL;
+\d star
+ALTER TABLE planet DROP COLUMN distance_from_earth_km;
+\d planet
+ALTER TABLE planet DROP COLUMN distance_from_earth;
+ALTER TABLE star ADD COLUMN distance_from_earth_ly FLOAT NOT NULL;
+ALTER TABLE planet ADD COLUMN distance_from_earth_ly FLOAT NOT NULL;
+\d planet
+\d moon
+\s psl_history.txt
