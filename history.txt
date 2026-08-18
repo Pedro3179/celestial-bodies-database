@@ -64,3 +64,18 @@ ALTER TABLE planet_type ALTER COLUMN planet_id SET NOT NULL;
 \q
 \s > history.txt
 \s history.txt
+\q
+\d
+\d planet
+ALTER TABLE planet ADD COLUMN star_id INT NOT NULL REFERENCES star(star_id);
+\d planet
+ALTER TABLE planet ADD COLUMN is_exoplanet BOOLEAN NOT NULL;
+\d planet
+ALTER TABLE planet ADD COLUMN planet_type_id INT REFERENCES planet_type(planet_type_id);
+ALTER TABLE planet ADD COLUMN mass FLOAT;
+\d planet
+ALTER TABLE planet ADD COLUMN distance_from_earth INT NOT NULL;
+ALTER TABLE planet ADD COLUMN is_confirmed BOOLEAN NOT NULL;
+\d
+\d planet
+\s history.txt
