@@ -79,3 +79,10 @@ ALTER TABLE planet ADD COLUMN is_confirmed BOOLEAN NOT NULL;
 \d
 \d planet
 \s history.txt
+\q
+ls
+\q
+\d moon
+ALTER TABLE moon ADD COLUMN distance_from_earth_km INT NOT NULL;
+\d moon
+\s psql_history.txt

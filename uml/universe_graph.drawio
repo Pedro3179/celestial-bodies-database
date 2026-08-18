@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Página-1" id="CguSVWQKwKXNE-vzjyr8">
-    <mxGraphModel dx="1860" dy="1886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1960" dy="1760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,10 +16,10 @@
         <mxCell id="kw4HFr7pXwPCT4lrf3mY-4" parent="kw4HFr7pXwPCT4lrf3mY-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="planet_id" vertex="1">
           <mxGeometry height="50" width="150" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="zdcVUqtPnDtZE_XEO5pm-1" parent="kw4HFr7pXwPCT4lrf3mY-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="mass (numeric)" vertex="1">
+        <mxCell id="zdcVUqtPnDtZE_XEO5pm-1" parent="kw4HFr7pXwPCT4lrf3mY-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="mass (float)" vertex="1">
           <mxGeometry height="30" width="150" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="zdcVUqtPnDtZE_XEO5pm-3" parent="kw4HFr7pXwPCT4lrf3mY-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="distance_from_earth (INT)" vertex="1">
+        <mxCell id="zdcVUqtPnDtZE_XEO5pm-3" parent="kw4HFr7pXwPCT4lrf3mY-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="distance_from_earth_km (INT)" vertex="1">
           <mxGeometry height="45" width="150" y="170" as="geometry" />
         </mxCell>
         <mxCell id="kw4HFr7pXwPCT4lrf3mY-6" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="planet" vertex="1">
@@ -43,7 +43,7 @@
         <mxCell id="fFDVP6kEXQdpKwKpTT2C-7" parent="kw4HFr7pXwPCT4lrf3mY-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="mass (float)" vertex="1">
           <mxGeometry height="30" width="150" y="195" as="geometry" />
         </mxCell>
-        <mxCell id="fFDVP6kEXQdpKwKpTT2C-9" parent="kw4HFr7pXwPCT4lrf3mY-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="distance_from_earth (INT)" vertex="1">
+        <mxCell id="fFDVP6kEXQdpKwKpTT2C-9" parent="kw4HFr7pXwPCT4lrf3mY-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="distance_from_earth_km (INT)" vertex="1">
           <mxGeometry height="45" width="150" y="225" as="geometry" />
         </mxCell>
         <mxCell id="zdcVUqtPnDtZE_XEO5pm-8" parent="kw4HFr7pXwPCT4lrf3mY-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="is_confirmed(boolean)" vertex="1">
@@ -64,7 +64,7 @@
         <mxCell id="kw4HFr7pXwPCT4lrf3mY-15" parent="kw4HFr7pXwPCT4lrf3mY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="mass (float)" vertex="1">
           <mxGeometry height="30" width="140" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="zdcVUqtPnDtZE_XEO5pm-4" parent="kw4HFr7pXwPCT4lrf3mY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="distance_from_earth (INT)" vertex="1">
+        <mxCell id="zdcVUqtPnDtZE_XEO5pm-4" parent="kw4HFr7pXwPCT4lrf3mY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="distance_from_earth_km (INT)" vertex="1">
           <mxGeometry height="45" width="140" y="150" as="geometry" />
         </mxCell>
         <mxCell id="kw4HFr7pXwPCT4lrf3mY-16" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="galaxy" vertex="1">
@@ -76,7 +76,7 @@
         <mxCell id="kw4HFr7pXwPCT4lrf3mY-18" parent="kw4HFr7pXwPCT4lrf3mY-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="name" vertex="1">
           <mxGeometry height="30" width="140" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="zdcVUqtPnDtZE_XEO5pm-5" parent="kw4HFr7pXwPCT4lrf3mY-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="distance_from_earth (INT)" vertex="1">
+        <mxCell id="zdcVUqtPnDtZE_XEO5pm-5" parent="kw4HFr7pXwPCT4lrf3mY-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="distance_from_earth_km (INT)" vertex="1">
           <mxGeometry height="45" width="140" y="90" as="geometry" />
         </mxCell>
         <mxCell id="zdcVUqtPnDtZE_XEO5pm-7" parent="kw4HFr7pXwPCT4lrf3mY-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" value="type (text)" vertex="1">
