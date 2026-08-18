@@ -86,3 +86,10 @@ ls
 ALTER TABLE moon ADD COLUMN distance_from_earth_km INT NOT NULL;
 \d moon
 \s psql_history.txt
+\q
+\d star
+ALTER TABLE star ADD COLUMN galaxy_id INT NOT NULL REFERENCES galaxy(galaxy_id);
+ALTER TABLE star ADD COLUMN mass FLOAT;
+ALTER TABLE star ADD COLUMN distance_from_earth_km INT NOT NULL;
+\d star
+\s psql_history.txt
