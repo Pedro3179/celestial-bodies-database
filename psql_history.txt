@@ -178,3 +178,28 @@ SELECT * FROM planet_type;
 UPDATE planet SET planet_type_id WHERE planet_id=2;
 UPDATE planet SET planet_type_id=1 WHERE planet_id=2;
 \s psql_history.txt
+\q
+\d planet
+INSERT INTO planet (
+name, star_id, is_exoplanet, planet_type_id, mass,  is_confirmed, distance_from_earth_ly
+)
+VALUES (
+'Earth', 2, false, 3, 1, true, 0);
+SELECT planet_id, name FROM planet;
+INSERT INTO moon (
+name, planet_id, mass, distance_from_earth_km
+)
+VALUES (
+'Moon', 3, 0.0123, 384800
+),
+(
+'Io', 2, 0.01495, 628742559
+),
+(
+'Ganymede', 2, 0.02481, 628742559
+),
+(
+'Callisto', 2, 0.01801, 628742559
+);
+\q
+\s psql_history.txt 

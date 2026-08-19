@@ -202,6 +202,10 @@ INSERT INTO public.galaxy VALUES (2, 'Milky Way', 26700, 'spiral', NULL);
 --
 
 INSERT INTO public.moon VALUES (1, 'Europa', 2, 0.008, 778000000);
+INSERT INTO public.moon VALUES (2, 'Moon', 3, 0.0123, 384800);
+INSERT INTO public.moon VALUES (3, 'Io', 2, 0.01495, 628742559);
+INSERT INTO public.moon VALUES (4, 'Ganymede', 2, 0.02481, 628742559);
+INSERT INTO public.moon VALUES (5, 'Callisto', 2, 0.01801, 628742559);
 
 
 --
@@ -210,6 +214,7 @@ INSERT INTO public.moon VALUES (1, 'Europa', 2, 0.008, 778000000);
 
 INSERT INTO public.planet VALUES (1, 'M51-ULS-1b', 1, true, NULL, NULL, false, 28000000);
 INSERT INTO public.planet VALUES (2, 'Jupiter', 2, false, 1, 317.83, true, 0.0001);
+INSERT INTO public.planet VALUES (3, 'Earth', 2, false, 3, 1, true, 0);
 
 
 --
@@ -241,14 +246,14 @@ SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 2, true);
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, true);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 5, true);
 
 
 --
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 2, true);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 3, true);
 
 
 --
