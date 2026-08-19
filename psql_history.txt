@@ -116,3 +116,33 @@ ALTER TABLE planet ADD COLUMN distance_from_earth_ly FLOAT NOT NULL;
 \d planet
 \d moon
 \s psl_history.txt
+\q
+SELECT * FROM galaxy
+;
+INSERT INTO galaxy (name, distance_from_earth_ly, type, apparent_magnitude) VALUES ('Messier 51', 31000000, 'spiral', 08.4);
+SELECT * FROM galaxy
+;
+INSERT INTO star (name, galaxy_id, mass, distance_from_earth_ly) VALUES ('M51-ULS-1A', 1, NULL, 31000000);
+SELECT * FROM star
+;
+INSERT INTO planet (name, star_id, is_exoplanet, is_confirmed, distance_from_earth_ly) VALUES ('M51-ULS-1b', 1, true, false, 28000000);
+\d planet
+SELECT * FROM planet
+;
+SELECT is_exoplanet  FROM planet
+
+INSERT INTO galaxy (name, distance_from_earth_ly, type) VALUES ('Milky Way', 26700, 'spiral');
+\d galaxy
+SELECT * FROM galaxy;
+INSERT INTO planet (name, galaxy_id, mass, distance_from_earth_ly) VALUES ('', 2, 332946.0, 0.000015);
+SELECT * FROM star;
+INSERT INTO planet (name, star_id, is_exoplanet, is_confirmed, mass, distance_from_earth_ly, type) VALUES ('Jupiter', 2, false, true, 317.83, 0.0001, NULL);
+INSERT INTO planet (name, star_id, is_exoplanet, is_confirmed, mass, distance_from_earth_ly, planet_type) VALUES ('Jupiter', 2, false, true, 317.83, 0.0001, NULL);
+INSERT INTO planet (name, star_id, is_exoplanet, is_confirmed, mass, distance_from_earth_ly, planet_type_id) VALUES ('Jupiter', 2, false, true, 317.83, 0.0001, NULL);
+\d planet
+SELECT * FROM planet;
+INSERT INTO moon
+(name, planet_id, mass, distance_from_earth_km)
+VALUES ('Europa', 2, 0.008, 778000000);
+SELECT * FROM moon;
+\s psql_history.txt 
