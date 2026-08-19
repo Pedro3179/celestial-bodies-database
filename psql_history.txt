@@ -146,3 +146,35 @@ INSERT INTO moon
 VALUES ('Europa', 2, 0.008, 778000000);
 SELECT * FROM moon;
 \s psql_history.txt 
+\q
+ALTER TABLE planet_type DROP COLUMN planet_id;
+ALTER TABLE planet_type ADD COLUMN composition TEXT;
+\d planet_type
+INSERT INTO planet_type
+(name, composition)
+VALUES (
+'gas giant', 'hydrogen, helium'
+),
+(
+'neptune-like', 'Hydrogen, helium, water, methane, ammonia'
+);
+SELECT * FROM planet_type;
+INSERT INTO planet_type
+(name, composition)
+VALUES ('terrestrial', 'Oxygen, silicon, iron, magnesium, nickelOxygen, silicon, iron, magnesium, nickel'
+),
+(
+'neptune-like', 'Hydrogen, helium, water, methane, ammonia'
+) \r
+INSERT INTO planet_type
+(name, composition)
+VALUES (
+'terrestrial', 'Oxygen, silicon, iron, magnesium, nickel'
+),
+(
+'super-earth', NULL
+);
+SELECT * FROM planet_type;
+UPDATE planet SET planet_type_id WHERE planet_id=2;
+UPDATE planet SET planet_type_id=1 WHERE planet_id=2;
+\s psql_history.txt
