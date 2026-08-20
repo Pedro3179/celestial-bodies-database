@@ -220,3 +220,12 @@ VALUES ('Messier 31', 2500000, 'spiral', 3.1),
 ('NGC 4886', 327000000, 'lenticular', 14.9),
 ('NGC 5264', 15000000, 'irregular', 12.96);
 \s psql_history.txt
+\q
+INSERT INTO star (name, galaxy_id, mass, distance_from_earth_ly)
+VALUES ('S301', 2, 399535.2, 26700),
+('51 Pegasi', 2, 366241, 50),
+('HD 60779', 2, 366241, 116),
+('Kepler-22', 2, 286333.56, 635),
+('GJ 1132', 2, 1598.14, 41),
+('AU Microscopii', 2, 36624.06, 32);
+\s psql_history.txt

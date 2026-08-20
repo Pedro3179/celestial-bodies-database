@@ -237,6 +237,12 @@ INSERT INTO public.planet_type VALUES (4, 'super-earth', NULL);
 
 INSERT INTO public.star VALUES (1, 'M51-ULS-1A', 1, NULL, 31000000);
 INSERT INTO public.star VALUES (2, 'Sun', 2, 332946, 1.5e-05);
+INSERT INTO public.star VALUES (3, 'S301', 2, 399535.2, 26700);
+INSERT INTO public.star VALUES (4, '51 Pegasi', 2, 366241, 50);
+INSERT INTO public.star VALUES (5, 'HD 60779', 2, 366241, 116);
+INSERT INTO public.star VALUES (6, 'Kepler-22', 2, 286333.56, 635);
+INSERT INTO public.star VALUES (7, 'GJ 1132', 2, 1598.14, 41);
+INSERT INTO public.star VALUES (8, 'AU Microscopii', 2, 36624.06, 32);
 
 
 --
@@ -271,7 +277,7 @@ SELECT pg_catalog.setval('public.planet_type_planet_type_id_seq', 4, true);
 -- Name: star_star_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.star_star_id_seq', 2, true);
+SELECT pg_catalog.setval('public.star_star_id_seq', 8, true);
 
 
 --
