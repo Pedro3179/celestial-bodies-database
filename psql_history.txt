@@ -221,7 +221,7 @@ VALUES ('Messier 31', 2500000, 'spiral', 3.1),
 ('NGC 5264', 15000000, 'irregular', 12.96);
 \s psql_history.txt
 \q
-INSERT INTO planet (name, star_id, is_exoplanet, planet_type_id, mass, is_confirmed, distance_from_earth_ly[B)
+INSERT INTO star (name, galaxy_id, mass, distance_from_earth_ly)
 VALUES ('S301', 2, 399535.2, 26700),
 ('51 Pegasi', 2, 366241, 50),
 ('HD 60779', 2, 366241, 116),
@@ -281,4 +281,24 @@ VALUES (
 (
 'AU Microscopii b', 8, true, 2, 8.99, true, 32
 );
+\s psql_history.txt 
+\q
+INSERT INTO moon (name, planet_id, mass, distance_from_earth_km)
+VALUES ('Phobos', 4, 0.00000000178, 7845562),
+('Deimos', 4, 0.000000000241, 78345562),
+('Mimas', 5, 0.00000628, 1277068160),
+('Enceladus', 5, 0.0000181, 127706860),
+('Tethys', 5, 0.0001034, 127768160),
+('Dione', 5, 0.0001834, 1277068160);
+INSERT INTO moon (name, planet_id, mass, distance_from_earth_km)
+VALUES ('Rhea', 5, 0.0003862, 1277068160),
+('Titan', 5, 0.02252, 1277068160),
+('Lapetus', 5, 0.0003023, 1277068160),
+('Triton', 7, 0.003584, 434879879),
+('Amalthea', 3, 0.000000347, 628742559),
+('Himalia', 3, 0.000000703, 628742559);
+INSERT INTO moon (name, planet_id, mass, distance_from_earth_km)
+VALUES ('Hyperion', 5, 0.000000929, 1277068160),
+('Phoebe', 5, 0.00000139, 1277068160),
+('Janus', 5, 0.000000316, 1277068160);
 \s psql_history.txt 
