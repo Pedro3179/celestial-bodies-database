@@ -202,4 +202,21 @@ VALUES (
 'Callisto', 2, 0.01801, 628742559
 );
 \q
-\s psql_history.txt 
+SELECT * FROM star
+;
+SELECT * FROM galaxy
+;
+\d star
+SELECT * FROM star
+;
+INSERT INTO galaxy (name, distance_from_earth_ly, type, apparent_magnitude)
+VALUES (Messier 31, 2500000, spiral, 3.1),
+(NGC 2865, 100000000, elliptical, 11.43),
+(NGC 4886, 327000000, lenticular, 14.9),
+(NGC 5264, 15000000, irregular, 12.96);
+INSERT INTO galaxy (name, distance_from_earth_ly, type, apparent_magnitude)
+VALUES ('Messier 31', 2500000, 'spiral', 3.1),
+('NGC 2865', 100000000, 'elliptical', 11.43),
+('NGC 4886', 327000000, 'lenticular', 14.9),
+('NGC 5264', 15000000, 'irregular', 12.96);
+\s psql_history.txt
